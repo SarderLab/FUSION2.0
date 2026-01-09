@@ -1,0 +1,1376 @@
+Formal class 'Seurat' [package "SeuratObject"] with 13 slots
+  ..@ assays      :List of 6
+  .. ..$ Xenium                      :Formal class 'Assay5' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ layers    :List of 3
+  .. .. .. .. ..$ counts    :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:1200776] 6 12 14 56 98 100 117 140 144 175 ...
+  .. .. .. .. .. .. ..@ p       : int [1:38493] 0 12 37 55 84 104 123 141 181 202 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 300 38492
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:1200776] 2 1 1 1 1 1 1 2 1 2 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ data      :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. .. ..@ i       : int [1:1200776] 6 12 14 56 98 100 117 140 144 175 ...
+  .. .. .. .. .. .. ..@ p       : int [1:38493] 0 12 37 55 84 104 123 141 181 202 ...
+  .. .. .. .. .. .. ..@ Dim     : int [1:2] 300 38492
+  .. .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. ..@ x       : num [1:1200776] 7.2 6.5 6.5 6.5 6.5 ...
+  .. .. .. .. .. .. ..@ factors : list()
+  .. .. .. .. ..$ scale.data: num [1:300, 1:38492] -0.228 -0.422 -0.202 -0.356 -0.372 ...
+  .. .. .. ..@ cells     :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:38492, 1:3] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. .. .. ..$ : chr [1:3] "counts" "data" "scale.data"
+  .. .. .. .. .. ..$ dim     : int [1:2] 38492 3
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. .. ..$ : chr [1:3] "counts" "data" "scale.data"
+  .. .. .. ..@ features  :Formal class 'LogMap' [package "SeuratObject"] with 1 slot
+  .. .. .. .. .. ..@ .Data: logi [1:300, 1:3] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. ..$ : chr [1:300] "ABCA3" "ABCB1" "ACKR1" "ACSM2A" ...
+  .. .. .. .. .. .. .. ..$ : chr [1:3] "counts" "data" "scale.data"
+  .. .. .. .. .. ..$ dim     : int [1:2] 300 3
+  .. .. .. .. .. ..$ dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:300] "ABCA3" "ABCB1" "ACKR1" "ACSM2A" ...
+  .. .. .. .. .. .. ..$ : chr [1:3] "counts" "data" "scale.data"
+  .. .. .. ..@ default   : int 1
+  .. .. .. ..@ assay.orig: chr(0) 
+  .. .. .. ..@ meta.data :'data.frame':	300 obs. of  8 variables:
+  .. .. .. .. ..$ vf_vst_counts_mean                 : num [1:300] 0.0553 0.3527 0.0884 0.2577 0.3457 ...
+  .. .. .. .. ..$ vf_vst_counts_variance             : num [1:300] 0.0621 1.4271 0.4245 0.8371 1.5076 ...
+  .. .. .. .. ..$ vf_vst_counts_variance.expected    : num [1:300] 0.129 1.028 0.203 0.686 0.993 ...
+  .. .. .. .. ..$ vf_vst_counts_variance.standardized: num [1:300] 0.482 1.388 2.092 1.22 1.519 ...
+  .. .. .. .. ..$ vf_vst_counts_variable             : logi [1:300] TRUE TRUE TRUE TRUE TRUE TRUE ...
+  .. .. .. .. ..$ vf_vst_counts_rank                 : int [1:300] 290 64 27 83 52 114 208 131 166 76 ...
+  .. .. .. .. ..$ var.features                       : chr [1:300] "ABCA3" "ABCB1" "ACKR1" "ACSM2A" ...
+  .. .. .. .. ..$ var.features.rank                  : int [1:300] 290 64 27 83 52 114 208 131 166 76 ...
+  .. .. .. ..@ misc      : Named list()
+  .. .. .. ..@ key       : chr "xenium_"
+  .. ..$ BlankCodeword               :Formal class 'Assay' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ counts       :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:382] 131 113 162 1 31 64 30 62 179 31 ...
+  .. .. .. .. .. ..@ p       : int [1:38493] 0 0 0 0 0 0 0 0 0 0 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 180 38492
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:180] "UnassignedCodeword-0007" "UnassignedCodeword-0011" "UnassignedCodeword-0012" "UnassignedCodeword-0017" ...
+  .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. ..@ x       : num [1:382] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ data         :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:382] 131 113 162 1 31 64 30 62 179 31 ...
+  .. .. .. .. .. ..@ p       : int [1:38493] 0 0 0 0 0 0 0 0 0 0 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 180 38492
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:180] "UnassignedCodeword-0007" "UnassignedCodeword-0011" "UnassignedCodeword-0012" "UnassignedCodeword-0017" ...
+  .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. ..@ x       : num [1:382] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ scale.data   : num[0 , 0 ] 
+  .. .. .. ..@ assay.orig   : NULL
+  .. .. .. ..@ var.features : chr(0) 
+  .. .. .. ..@ meta.features:'data.frame':	180 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "blankcodeword_"
+  .. ..$ ControlCodeword             :Formal class 'Assay' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ counts       :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:82] 32 35 33 35 2 26 2 23 2 38 ...
+  .. .. .. .. .. ..@ p       : int [1:38493] 0 0 0 0 0 0 0 0 0 0 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 41 38492
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:41] "NegControlCodeword-0500" "NegControlCodeword-0501" "NegControlCodeword-0502" "NegControlCodeword-0503" ...
+  .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. ..@ x       : num [1:82] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ data         :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:82] 32 35 33 35 2 26 2 23 2 38 ...
+  .. .. .. .. .. ..@ p       : int [1:38493] 0 0 0 0 0 0 0 0 0 0 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 41 38492
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:41] "NegControlCodeword-0500" "NegControlCodeword-0501" "NegControlCodeword-0502" "NegControlCodeword-0503" ...
+  .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. ..@ x       : num [1:82] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ scale.data   : num[0 , 0 ] 
+  .. .. .. ..@ assay.orig   : NULL
+  .. .. .. ..@ var.features : chr(0) 
+  .. .. .. ..@ meta.features:'data.frame':	41 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "controlcodeword_"
+  .. ..$ ControlProbe                :Formal class 'Assay' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ counts       :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:233] 13 13 11 13 15 13 13 7 13 0 ...
+  .. .. .. .. .. ..@ p       : int [1:38493] 0 0 0 0 0 0 0 0 0 0 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 20 38492
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:20] "NegControlProbe-00042" "NegControlProbe-00041" "NegControlProbe-00039" "NegControlProbe-00035" ...
+  .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. ..@ x       : num [1:233] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ data         :Formal class 'dgCMatrix' [package "Matrix"] with 6 slots
+  .. .. .. .. .. ..@ i       : int [1:233] 13 13 11 13 15 13 13 7 13 0 ...
+  .. .. .. .. .. ..@ p       : int [1:38493] 0 0 0 0 0 0 0 0 0 0 ...
+  .. .. .. .. .. ..@ Dim     : int [1:2] 20 38492
+  .. .. .. .. .. ..@ Dimnames:List of 2
+  .. .. .. .. .. .. ..$ : chr [1:20] "NegControlProbe-00042" "NegControlProbe-00041" "NegControlProbe-00039" "NegControlProbe-00035" ...
+  .. .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. ..@ x       : num [1:233] 1 1 1 1 1 1 1 1 1 1 ...
+  .. .. .. .. .. ..@ factors : list()
+  .. .. .. ..@ scale.data   : num[0 , 0 ] 
+  .. .. .. ..@ assay.orig   : NULL
+  .. .. .. ..@ var.features : chr(0) 
+  .. .. .. ..@ meta.features:'data.frame':	20 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "controlprobe_"
+  .. ..$ prediction.score.celltype.l1:Formal class 'Assay' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ counts       : num[0 , 0 ] 
+  .. .. .. ..@ data         : num [1:5, 1:38492] 0.0276 0.5472 0.4253 0 0 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:5] "epithelial cells" "stroma cells" "endothelial cells" "immune cells" ...
+  .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. ..@ scale.data   : num[0 , 0 ] 
+  .. .. .. ..@ assay.orig   : NULL
+  .. .. .. ..@ var.features : logi(0) 
+  .. .. .. ..@ meta.features:'data.frame':	5 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "predictionscorecelltypel1_"
+  .. ..$ prediction.score.celltype.l2:Formal class 'Assay' [package "SeuratObject"] with 8 slots
+  .. .. .. ..@ counts       : num[0 , 0 ] 
+  .. .. .. ..@ data         : num [1:76, 1:38492] 0.0153 0 0 0 0 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : chr [1:76] "Degenerative Proximal Tubule Epithelial Cell" "Medullary Fibroblast" "Descending Vasa Recta Endothelial Cell" "Medullary Thick Ascending Limb Cell" ...
+  .. .. .. .. .. ..$ : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. ..@ scale.data   : num[0 , 0 ] 
+  .. .. .. ..@ assay.orig   : NULL
+  .. .. .. ..@ var.features : logi(0) 
+  .. .. .. ..@ meta.features:'data.frame':	76 obs. of  0 variables
+  .. .. .. ..@ misc         : Named list()
+  .. .. .. ..@ key          : chr "predictionscorecelltypel2_"
+  ..@ meta.data   :'data.frame':	38492 obs. of  24 variables:
+  .. ..$ orig.ident                 : Factor w/ 1 level "SeuratProject": 1 1 1 1 1 1 1 1 1 1 ...
+  .. ..$ nCount_Xenium              : num [1:38492] 15 53 23 49 43 41 33 116 54 23 ...
+  .. ..$ nFeature_Xenium            : int [1:38492] 12 25 18 29 20 19 18 40 21 13 ...
+  .. ..$ nCount_BlankCodeword       : num [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ nFeature_BlankCodeword     : int [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ nCount_ControlCodeword     : num [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ nFeature_ControlCodeword   : int [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ nCount_ControlProbe        : num [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ nFeature_ControlProbe      : int [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ cell_id                    : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. ..$ x_centroid                 : num [1:38492] 1663 1661 1650 1646 1661 ...
+  .. ..$ y_centroid                 : num [1:38492] 592 605 603 596 597 ...
+  .. ..$ transcript_counts          : num [1:38492] 15 53 23 49 43 41 33 116 54 23 ...
+  .. ..$ control_probe_counts       : num [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ control_codeword_counts    : num [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ unassigned_codeword_counts : num [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ deprecated_codeword_counts : num [1:38492] 0 0 0 0 0 0 0 0 0 0 ...
+  .. ..$ total_counts               : num [1:38492] 15 53 23 49 43 41 33 116 54 23 ...
+  .. ..$ cell_area                  : num [1:38492] 30.7 65.2 69.8 79.7 64.8 ...
+  .. ..$ nucleus_area               : num [1:38492] 5.78 7.63 8.67 12.6 6.32 ...
+  .. ..$ predicted.celltype.l1.score: num [1:38492] 0.547 0.513 0.921 0.775 0.986 ...
+  .. ..$ predicted.celltype.l1      : chr [1:38492] "stroma cells" "endothelial cells" "stroma cells" "endothelial cells" ...
+  .. ..$ predicted.celltype.l2.score: num [1:38492] 0.318 0.34 0.53 0.527 0.802 ...
+  .. ..$ predicted.celltype.l2      : chr [1:38492] "Glomerular Capillary Endothelial Cell" "Glomerular Capillary Endothelial Cell" "Vascular Smooth Muscle Cell / Pericyte" "Glomerular Capillary Endothelial Cell" ...
+  ..@ active.assay: chr "Xenium"
+  ..@ active.ident: Factor w/ 1 level "SeuratProject": 1 1 1 1 1 1 1 1 1 1 ...
+  .. ..- attr(*, "names")= chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  ..@ graphs      : list()
+  ..@ neighbors   : list()
+  ..@ reductions  :List of 1
+  .. ..$ ref.pca:Formal class 'DimReduc' [package "SeuratObject"] with 9 slots
+  .. .. .. ..@ cell.embeddings           : num [1:38492, 1:20] 8.99 14.15 14.15 15.99 12.13 ...
+  .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. ..$ : Named chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. .. ..- attr(*, "names")= chr [1:38492] "aaaalfea-1_query" "aaaamnad-1_query" "aaadioko-1_query" "aaaimilh-1_query" ...
+  .. .. .. .. .. ..$ : chr [1:20] "refpca_1" "refpca_2" "refpca_3" "refpca_4" ...
+  .. .. .. ..@ feature.loadings          : num[0 , 0 ] 
+  .. .. .. ..@ feature.loadings.projected: num[0 , 0 ] 
+  .. .. .. ..@ assay.used                : chr "Xenium"
+  .. .. .. ..@ global                    : logi FALSE
+  .. .. .. ..@ stdev                     : num(0) 
+  .. .. .. ..@ jackstraw                 :Formal class 'JackStrawData' [package "SeuratObject"] with 4 slots
+  .. .. .. .. .. ..@ empirical.p.values     : num[0 , 0 ] 
+  .. .. .. .. .. ..@ fake.reduction.scores  : num[0 , 0 ] 
+  .. .. .. .. .. ..@ empirical.p.values.full: num[0 , 0 ] 
+  .. .. .. .. .. ..@ overall.p.values       : num[0 , 0 ] 
+  .. .. .. ..@ misc                      :List of 1
+  .. .. .. .. ..$ ref.dims: int [1:20] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. .. ..@ key                       : chr "refpca_"
+  ..@ images      :List of 1
+  .. ..$ fov:Formal class 'FOV' [package "SeuratObject"] with 4 slots
+  .. .. .. ..@ molecules :List of 1
+  .. .. .. .. ..$ molecules:Formal class 'Molecules' [package "SeuratObject"] with 2 slots
+  .. .. .. .. .. .. ..@ .Data:List of 541
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3124, 1:2] 228 189 211 213 206 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 189 290 2324 9203
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:18757, 1:2] 211 242 243 247 249 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 133 144 2346 9361
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:4424, 1:2] 209 233 233 235 237 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 209 360 2443 8819
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:14380, 1:2] 209 215 215 215 227 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 193 343 2298 8935
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:18116, 1:2] 220 233 241 244 221 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 137 328 2291 9034
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:51890, 1:2] 209 228 234 237 238 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 152 124 2457 8865
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:39299, 1:2] 215 221 239 244 244 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 144 226 2441 9360
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1340, 1:2] 171 245 247 476 342 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 171 347 2098 8825
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:377, 1:2] 188 234 180 481 482 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 180 379 2138 8843
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:10017, 1:2] 208 248 160 165 171 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 146 346 2466 9360
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:661, 1:2] 188 226 206 237 175 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 175 343 2092 9101
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:812, 1:2] 209 389 490 423 413 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 209 359 2175 8810
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:9982, 1:2] 73.3 243.7 246.4 216.1 237.4 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 73.3 64.9 2460.3 8856
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1002, 1:2] 248 243 174 232 463 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 174 348 2166 9017
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:6678, 1:2] 239 240 242 242 205 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 143 163 2440 9068
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:12110, 1:2] 240 240 240 221 241 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 170.3 90.1 2386.1 8841.1
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:80693, 1:2] 127.2 202.2 122.4 193.5 90.2 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 13.1 291.2 2462.1 9374.9
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:9572, 1:2] 249 217 247 212 213 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 140 137 2432 8846
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3955, 1:2] 246 173 228 230 233 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 173 348 2162 8843
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:644, 1:2] 209 224 225 433 425 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 209 380 2062 8820
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:156, 1:2] 75 489 346 441 470 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 75 361 2161 9307
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:237, 1:2] 160 220 191 388 440 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 160 345 2081 8798
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:308, 1:2] 210 185 467 371 310 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 185 377 2169 8778
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:21994, 1:2] 126 151 156 156 157 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 126.1 20.1 2446.2 9388.4
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:7714, 1:2] 240 241 243 244 234 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 69.3 180 2288.6 9380.2
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3820, 1:2] 234 244 208 231 243 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 173 354 2183 8877
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3962, 1:2] 78.1 226.5 246.5 176.5 224.6 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 78.1 356.8 2306.4 8845.2
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:449, 1:2] 162 483 478 434 444 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 162 349 2138 8829
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1971, 1:2] 234 240 248 233 197 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 170 355 2160 9111
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:87, 1:2] 422 360 748 627 642 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 360.3 18.8 2013.8 8815.9
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:24370, 1:2] 213 214 233 248 249 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 146 289 2277 8856
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:7993, 1:2] 77.7 200.4 220.4 227.2 205.5 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 77.7 299.9 2397.2 8971
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:618, 1:2] 230 209 141 190 156 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 141 339 2318 8845
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:6328, 1:2] 218 242 243 220 201 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 163 335 2199 8854
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:42946, 1:2] 240 181 185 186 187 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 163 135 2384 9323
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:787, 1:2] 242 228 186 388 420 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 186 354 2172 8838
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:78286, 1:2] 214 216 219 219 225 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 157 95 2464 9122
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:4729, 1:2] 223 247 214 229 189 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 163 356 2147 8842
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:202, 1:2] 308 486 495 392 487 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 284 356 2160 8758
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:23445, 1:2] 229 230 239 241 244 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 166 114 2453 8848
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:9485, 1:2] 232 235 246 246 247 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 159 283 2466 9360
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:12295, 1:2] 218 223 239 241 242 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 171 347 2193 9325
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:10503, 1:2] 221 237 242 245 245 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 169 195 2382 8849
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:7336, 1:2] 218 225 210 227 242 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 149 347 2168 8856
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3124, 1:2] 206.7 91.6 246.7 248.3 199 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 91.6 313.5 2173.5 9189.5
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:4835, 1:2] 245 246 230 230 234 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 173 362 2375 8836
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3071, 1:2] 40.2 217.1 242 207.7 184.9 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 40.2 196.4 2201.2 8913.2
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:7655, 1:2] 228 239 244 246 246 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 171 297 2337 8836
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:9407, 1:2] 231 242 246 246 224 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 94.2 214.3 2450.6 9218.1
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3707, 1:2] 228 218 246 246 246 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 173 278 2372 8905
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:464, 1:2] 235 185 223 486 452 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 185 334 2143 8793
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3260, 1:2] 210 214 144 244 248 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 144 141 2465 8866
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:727, 1:2] 208 237 178 214 244 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 178 356 2145 9366
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:32015, 1:2] 202 207 208 212 213 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 137.5 83.5 2410.6 9065.7
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:17973, 1:2] 235 237 241 241 226 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 149 341 2187 9102
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:7367, 1:2] 131 211 212 234 237 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 131 345 2323 9227
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:13595, 1:2] 245 249 240 245 226 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 153 286 2355 8856
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:611, 1:2] 475 411 481 477 483 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 257 345 2147 8780
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:9676, 1:2] 216 219 237 220 217 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 126 303 2418 9007
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:2560, 1:2] 215 215 201 179 186 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 179 340 2167 8844
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:39213, 1:2] 231 234 236 239 239 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 80 199 2405 9194
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1717, 1:2] 222 171 176 195 203 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 162 354 2357 8857
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:253, 1:2] 194 375 385 358 393 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 194 359 2084 8809
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:298, 1:2] 241 216 389 461 482 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 216 358 2167 8773
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1486, 1:2] 214 215 191 237 488 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 191 255 2409 8837
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:5518, 1:2] 214 195 275 499 408 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 195 343 2404 9010
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:5720, 1:2] 250 208 248 248 241 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 196 357 2261 8831
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1765, 1:2] 239 239 241 244 249 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 162 251 2361 8852
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3968, 1:2] 210 211 245 248 247 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 70.5 350.1 2297 9141.2
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:111798, 1:2] 206 212 214 215 215 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 74.4 97.5 2462.2 9359.6
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:52401, 1:2] 207 229 236 239 239 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 150 132 2457 9099
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:81793, 1:2] 241 149 180 210 211 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 118.7 54.4 2465.9 9325.5
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:19958, 1:2] 135 224 230 233 233 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 135 210 2464 8972
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:9763, 1:2] 249 236 217 243 143 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 143 192 2465 9200
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:7305, 1:2] 250 250 249 182 193 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 182 326 2280 8838
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:6567, 1:2] 209 241 246 247 247 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 185 344 2374 8933
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:12229, 1:2] 216 227 231 239 242 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 175 145 2183 9199
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:3795, 1:2] 241 241 208 243 240 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 195 367 2197 8828
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1177, 1:2] 208 228 225 228 227 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 208 331 2162 8829
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:4254, 1:2] 207 211 236 246 236 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 35.4 354.7 2175.7 9250.2
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:29180, 1:2] 225 231 231 234 236 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 158 164 2325 8854
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:543, 1:2] 188 344 406 477 352 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 188 405 2187 8770
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:13424, 1:2] 210 235 212 215 216 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 127 228 2410 9253
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:379, 1:2] 151 202 228 200 202 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 151 372 2174 8840
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1590, 1:2] 248 207 162 168 216 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 162 289 2163 8858
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:183, 1:2] 208 410 393 297 438 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 208 353 2082 8791
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:6035, 1:2] 244 239 230 249 205 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 205 177 2160 8820
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:230, 1:2] 145 432 437 683 717 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 145 205 2328 8847
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:61811, 1:2] 219 220 222 223 225 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 154 84 2436 9194
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:136, 1:2] 417 436 476 309 326 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 263 534 2042 8791
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:51325, 1:2] 91.9 195 167.7 217.2 197.5 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 91.9 104.4 2436.5 9141.4
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:2253, 1:2] 235 243 234 217 203 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 203 351 2184 8846
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:449, 1:2] 218 242 312 296 497 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 218 357 2118 8805
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1426, 1:2] 210 238 217 236 204 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 202 356 2176 8836
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:248, 1:2] 193 482 449 441 493 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 193 361 2357 9310
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:15497, 1:2] 219 222 245 246 247 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 185 340 2241 9283
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:1905, 1:2] 23.5 211.8 237.8 189 242.7 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 23.5 40.1 2179.4 9005.2
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:6638, 1:2] 219 219 221 218 220 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 174 349 2163 8830
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. ..$ :Formal class 'SpatialPoints' [package "sp"] with 3 slots
+  .. .. .. .. .. .. .. .. .. ..@ coords     : num [1:28299, 1:2] 218 222 222 222 232 ...
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 168 299 2323 9128
+  .. .. .. .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. .. .. .. .. .. [list output truncated]
+  .. .. .. .. .. .. ..@ key  : chr ""
+  .. .. .. .. .. .. ..$ names: chr [1:541] "ABCA3" "ABCB1" "ACKR1" "ACSM2A" ...
+  .. .. .. ..@ boundaries:List of 1
+  .. .. .. .. ..$ centroids:Formal class 'Centroids' [package "SeuratObject"] with 7 slots
+  .. .. .. .. .. .. ..@ cells      : chr [1:38492] "aaaalfea-1" "aaaamnad-1" "aaadioko-1" "aaaimilh-1" ...
+  .. .. .. .. .. .. ..@ nsides     : int 0
+  .. .. .. .. .. .. ..@ radius     : num 55.4
+  .. .. .. .. .. .. ..@ theta      : num 0
+  .. .. .. .. .. .. ..@ coords     : num [1:38492, 1:2] 1663 1661 1650 1646 1661 ...
+  .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. ..@ bbox       : num [1:2, 1:2] 137 341 2185 9359
+  .. .. .. .. .. .. .. ..- attr(*, "dimnames")=List of 2
+  .. .. .. .. .. .. .. .. ..$ : chr [1:2] "x" "y"
+  .. .. .. .. .. .. .. .. ..$ : chr [1:2] "min" "max"
+  .. .. .. .. .. .. ..@ proj4string:Formal class 'CRS' [package "sp"] with 1 slot
+  .. .. .. .. .. .. .. .. ..@ projargs: chr NA
+  .. .. .. ..@ assay     : chr "Xenium"
+  .. .. .. ..@ key       : chr "Xenium_"
+  ..@ project.name: chr "SeuratProject"
+  ..@ misc        :List of 1
+  .. ..$ run_metadata:List of 7
+  .. .. ..$ run_start_time       : chr "2024-02-23T20:04:51Z"
+  .. .. ..$ preservation_method  : chr "ffpe"
+  .. .. ..$ panel_name           : chr "hMulti_300g"
+  .. .. ..$ panel_organism       : chr "Human"
+  .. .. ..$ panel_tissue_type    : chr "Multi"
+  .. .. ..$ instrument_sw_version: chr "1.8.2.1"
+  .. .. ..$ segmentation_stain   : chr ""
+  ..@ version     :Classes 'package_version', 'numeric_version'  hidden list of 1
+  .. ..$ : int [1:3] 5 0 2
+  ..@ commands    :List of 3
+  .. ..$ NormalizeData.Xenium       :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "NormalizeData.Xenium"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-04-18 13:07:01"
+  .. .. .. ..@ assay.used : chr "Xenium"
+  .. .. .. ..@ call.string: chr [1:2] "NormalizeData(myseu, normalization.method = \"LogNormalize\", " "    scale.factor = 10000)"
+  .. .. .. ..@ params     :List of 5
+  .. .. .. .. ..$ assay               : chr "Xenium"
+  .. .. .. .. ..$ normalization.method: chr "LogNormalize"
+  .. .. .. .. ..$ scale.factor        : num 10000
+  .. .. .. .. ..$ margin              : num 1
+  .. .. .. .. ..$ verbose             : logi TRUE
+  .. ..$ FindVariableFeatures.Xenium:Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "FindVariableFeatures.Xenium"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-04-18 13:07:02"
+  .. .. .. ..@ assay.used : chr "Xenium"
+  .. .. .. ..@ call.string: chr "FindVariableFeatures(object = myseu)"
+  .. .. .. ..@ params     :List of 12
+  .. .. .. .. ..$ assay              : chr "Xenium"
+  .. .. .. .. ..$ selection.method   : chr "vst"
+  .. .. .. .. ..$ loess.span         : num 0.3
+  .. .. .. .. ..$ clip.max           : chr "auto"
+  .. .. .. .. ..$ mean.function      :function (mat, display_progress)  
+  .. .. .. .. ..$ dispersion.function:function (mat, display_progress)  
+  .. .. .. .. ..$ num.bin            : num 20
+  .. .. .. .. ..$ binning.method     : chr "equal_width"
+  .. .. .. .. ..$ nfeatures          : num 2000
+  .. .. .. .. ..$ mean.cutoff        : num [1:2] 0.1 8
+  .. .. .. .. ..$ dispersion.cutoff  : num [1:2] 1 Inf
+  .. .. .. .. ..$ verbose            : logi TRUE
+  .. ..$ ScaleData.Xenium           :Formal class 'SeuratCommand' [package "SeuratObject"] with 5 slots
+  .. .. .. ..@ name       : chr "ScaleData.Xenium"
+  .. .. .. ..@ time.stamp : POSIXct[1:1], format: "2025-04-18 13:07:07"
+  .. .. .. ..@ assay.used : chr "Xenium"
+  .. .. .. ..@ call.string: chr "ScaleData(object = myseu)"
+  .. .. .. ..@ params     :List of 9
+  .. .. .. .. ..$ assay             : chr "Xenium"
+  .. .. .. .. ..$ model.use         : chr "linear"
+  .. .. .. .. ..$ use.umi           : logi FALSE
+  .. .. .. .. ..$ do.scale          : logi TRUE
+  .. .. .. .. ..$ do.center         : logi TRUE
+  .. .. .. .. ..$ scale.max         : num 10
+  .. .. .. .. ..$ block.size        : num 1000
+  .. .. .. .. ..$ min.cells.to.block: num 3000
+  .. .. .. .. ..$ verbose           : logi TRUE
+  ..@ tools       : Named list()
